@@ -1,29 +1,42 @@
 body {
-  font-family: Arial, sans-serif;
-  color: darkgray
+  font-family: 'PT Sans', sans-serif;
+  color: black;
 }
 
 h1 {
   font-size: 38px;
+
 }
 
 h2 {
   font-size: 32px;
+  border-top: 1px;
+  border-bottom: 1px;
+  shape-outside: polygon();
+
+}
+
+h3 {
+  color: teal;
 }
 
 ul li a {
   text-decoration: none;
   color: inherit;
+  border: 4x teal;
 }
 
 header > img {
+  display: block;
   width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ingredients-list {
-  list-style: square-inside;
+  list-style: squares-inside;
 }
 
 * {
-  background-color: beige;
+  background-color: pale;
 }
