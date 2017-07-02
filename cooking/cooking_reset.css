@@ -27,3 +27,38 @@ h2 + .user_review {
 ul li a: nth-child(odd) {
   background: gray;
 }
+
+nav {
+  display: inline;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul a {
+  display: block;
+  padding: 1px;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
+aside {
+  display: inline-block;
+  width: 180px;
+  margin: 15px;
+}
+
+main {
+  display: inline;
+  width: 700px;
+}
+
+textarea{
+  margin: 1px;
+  width:150px;
+
+}
