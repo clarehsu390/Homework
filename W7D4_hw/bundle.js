@@ -12086,18 +12086,6 @@ var _violet = __webpack_require__(110);
 
 var _violet2 = _interopRequireDefault(_violet);
 
-var _orange = __webpack_require__(108);
-
-var _orange2 = _interopRequireDefault(_orange);
-
-var _yellow = __webpack_require__(111);
-
-var _yellow2 = _interopRequireDefault(_yellow);
-
-var _indigo = __webpack_require__(107);
-
-var _indigo2 = _interopRequireDefault(_indigo);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12133,16 +12121,6 @@ var Rainbow = function (_React$Component) {
         ),
         _react2.default.createElement(
           _reactRouterDom.NavLink,
-          { to: '/red/orange' },
-          'Add orange'
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
-          { to: '/red/yellow' },
-          'Add yellow'
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
           { to: '/green' },
           'Green'
         ),
@@ -12153,11 +12131,6 @@ var Rainbow = function (_React$Component) {
         ),
         _react2.default.createElement(
           _reactRouterDom.NavLink,
-          { to: 'blue/indigo' },
-          'Add indigo'
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.NavLink,
           { to: '/violet' },
           'Violet'
         ),
@@ -12165,11 +12138,8 @@ var Rainbow = function (_React$Component) {
           'div',
           { id: 'rainbow' },
           _react2.default.createElement(_reactRouterDom.Route, { path: '/red', component: _red2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/red/orange', component: _orange2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/red/yellow', component: _yellow2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/green', component: _green2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/blue', component: _blue2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/blue/indigo', component: _indigo2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/violet', component: _violet2.default })
         )
       );
@@ -12178,8 +12148,6 @@ var Rainbow = function (_React$Component) {
 
   return Rainbow;
 }(_react2.default.Component);
-
-;
 
 exports.default = Rainbow;
 
@@ -12239,7 +12207,13 @@ var Blue = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('h2', { className: 'blue' })
+        _react2.default.createElement('h2', { className: 'blue' }),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: 'blue/indigo' },
+          'Add indigo'
+        ),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/blue/indigo', component: _indigo2.default })
       );
     }
   }]);
@@ -12382,15 +12356,25 @@ var Red = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('h2', { className: 'red' })
+        _react2.default.createElement('h2', { className: 'red' }),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/red/orange' },
+          'Add orange'
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { to: '/red/yellow' },
+          'Add yellow'
+        ),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/red/orange', component: _orange2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/red/yellow', component: _yellow2.default })
       );
     }
   }]);
 
   return Red;
 }(_react2.default.Component);
-
-;
 
 exports.default = Red;
 
